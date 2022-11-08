@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/frostofolio-icon.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+	<title>Frostofolio - My Blog</title>
+</head>
+
+<body>
+	<main data-theme="Glass">
+		<nav class="nav">
+			<ul class="nav-list">
+				<li data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+					<a class="link" href="index.html">
+						<i class="zen frs-home"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="About Me">
+					<a class="link" href="about.html">
+						<i class="zen frs-user"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="My Resume">
+					<a class="link" href="resume.html">
+						<i class="zen frs-resume_website"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="My Project">
+					<a class="link" href="project.html">
+						<i class="zen frs-project"></i>
+					</a>
+				</li>
+				<li class="active mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Blog">
+					<a class="link" href="blog.html">
+						<i class="zen frs-edit_property"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Contact Me">
+					<a class="link" href="contact.html">
+						<i class="zen frs-envelope"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<nav class="nav-mobile">
+			<ul class="nav-list">
+				<li class="active" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+					<a class="link" href="index.html">
+						<i class="zen frs-home frs-home_solid"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="About Me">
+					<a class="link" href="about.html">
+						<i class="zen frs-user"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="My Resume">
+					<a class="link" href="resume.html">
+						<i class="zen frs-resume_website"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="My Project">
+					<a class="link" href="project.html">
+						<i class="zen frs-project"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Blog">
+					<a class="link" href="blog.html">
+						<i class="zen frs-edit_property"></i>
+					</a>
+				</li>
+				<li class="mt-3 mt-sm-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Contact Me">
+					<a class="link" href="contact.html">
+						<i class="zen frs-envelope"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="content">
+			<div class="container mt-3">
+				<div class="position-relative">
+					<div class="position-absolute top-0 end-0">
+						<button id="dark-mode-toggle" class="dark-mode-toggle btn btn-dark btn-light btn-glass">
+							<i class="zen frs-sun"></i>
+						</button>
+					</div>
+				</div>
+				<div class="d-none d-sm-block text-center" id="title">
+					<h2 class="title text-capitalize"><span>My</span> Blog</h2>
+				</div>
+				<div class="row d-inline filter mx-2 text-secondary">
+					<div class="dropdown d-inline">
+						<a class="btn btn-sm rounded btn-light btn-glass btn-dark dropdown-toggle px-lg-3" href="#" role="button"
+							id="dropdownMenuLink-date" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="zen frs-calendar_30_solid"></i> Date
+						</a>
+
+						<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink-date">
+							<li><a class="dropdown-item" href="#">Today</a></li>
+							<li><a class="dropdown-item" href="#">Yesterday</a></li>
+							<li><a class="dropdown-item" href="#">14 Days Ago</a></li>
+							<li><a class="dropdown-item" href="#">1 Month Ago</a></li>
+							<li><a class="dropdown-item" href="#">1 Year Ago</a></li>
+						</ul>
+					</div>
+					<div class="dropdown d-inline">
+						<a class="btn btn-sm rounded btn-light btn-glass btn-dark dropdown-toggle px-lg-3" href="#" role="button"
+							id="dropdownMenuLink-category" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="zen frs-tags_solid"></i> Category
+						</a>
+
+						<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink-category">
+							<li><a class="dropdown-item" href="#">Design</a></li>
+							<li><a class="dropdown-item" href="#">Web</a></li>
+							<li><a class="dropdown-item" href="#">Desktop</a></li>
+							<li><a class="dropdown-item" href="#">Android</a></li>
+							<li><a class="dropdown-item" href="#">iOS</a></li>
+							<li><a class="dropdown-item" href="#">Tips & Trick</a></li>
+						</ul>
+					</div>
+					<input type="text" class="float-end form-control form-control-sm form-control-hov w-25 d-none d-lg-block"
+						id="search-c" placeholder="Search" />
+				</div>
+				<section class="row pb-5 d-flex align-items-center w-100">
+					<div class="search mt-3">
+						<input type="text" class="float-sm-start form-control form-control-sm form-control-hov d-lg-none"
+							id="search-m" placeholder="Search" />
+					</div>
+					<div class="col-lg-4 col-md-6 col-12 gy-3">
+						<div class="card border-0 shadow-sm bg-glass bg-dark"
+							style="width: auto; height: 23rem; border-radius: 10px" id="blog-1">
+							<div class="image d-flex">
+								<img src="./assets/img/blog-09.jpg" class="card-img-top" style="border-radius: 10px" alt="..." />
+								<div class="date">
+									<p class="position-absolute p-1 px-2 bg-primary rounded-pill text-dark text-white"
+										style="top: 10px; left: 10px; font-size: 12px">
+										20, June 2020
+									</p>
+								</div>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title text-center">
+									<a href="#modal" data-bs-toggle="modal" role="button"> BlinkDrones — Manage
+										Deliveries ~ UX/UI Case Study </a>
+								</h6>
+								<p class="card-text" style="font-size: 13px; line-height: 17pt">
+									Build a platform for last-mile delivery using BlinkDrones’ innovative new electric
+									drones which are custom
+									designed to deliver packages ...
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12 gy-3">
+						<div class="card border-0 shadow-sm bg-glass bg-dark"
+							style="width: auto; height: 23rem; border-radius: 10px" id="blog-2">
+							<div class="image d-flex">
+								<img src="./assets/img/blog-04.jpg" class="card-img-top" style="border-radius: 10px" alt="..." />
+								<div class="date">
+									<p class="position-absolute p-1 px-2 bg-primary rounded-pill text-dark text-white"
+										style="top: 10px; left: 10px; font-size: 12px">
+										20, June 2020
+									</p>
+								</div>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title text-center">
+									<a href="#modal" data-bs-toggle="modal" role="button"> JavaScript 2021: New Features
+									</a>
+								</h6>
+								<p class="card-text" style="font-size: 13px; line-height: 17pt">
+									JavaScript is an easy-to-learn programming language which makes it suitable for
+									beginners. Over the years, it
+									has evolved so much that it’s almost everywhere ...
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12 gy-3">
+						<div class="card border-0 shadow-sm bg-glass bg-dark"
+							style="width: auto; height: 23rem; border-radius: 10px" id="blog-3">
+							<div class="image d-flex">
+								<img src="./assets/img/blog-01.jpg" class="card-img-top" style="border-radius: 10px" alt="..." />
+								<div class="date">
+									<p class="position-absolute p-1 px-2 bg-primary rounded-pill text-dark text-white"
+										style="top: 10px; left: 10px; font-size: 12px">
+										20, June 2020
+									</p>
+								</div>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title text-center">
+									<a href="#modal" data-bs-toggle="modal" role="button"> Inspirational Commencement
+										takeaways </a>
+								</h6>
+								<p class="card-text" style="font-size: 13px; line-height: 17pt">
+									The university hosted a mixture of in-person and virtual events celebrating the
+									Class of 2021. Two in-person
+									graduate recognition ceremonies ...
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<nav aria-label="Page navigation example" class="mt-4">
+						<ul class="pagination justify-content-center border-0 m-0">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+		</section>
+		<section class="blog-page" data-id-blog="blog-3">
+			<div class="modal fade" id="modal" aria-hidden="true" tabindex="-1">
+				<div class="modal-dialog modal-fullscreen">
+					<div class="modal-content bg-light bg-dark bg-glass">
+						<div class="modal-header" style="box-shadow: 0 0 0.5rem 0px rgba(0, 0, 0, 20%)">
+							<button type="button" class="btn-close" style="margin-right: 10px" data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="blog mx-md-5">
+								<div class="row">
+									<div class="col-12 col-lg-12">
+										<div class="hero-image d-flex" style="
+													background-image: url('assets/img/minimal-digital-art-space-wallpaper-background-64899-67102-hd-wallpapers.jpg');
+												"></div>
+									</div>
+									<div class="col-12 col-lg-9">
+										<div class="blog-box text-secondary py-2">
+											<div class="blog-title fw-bold mx-5 my-3 text-primary">
+												<h1>The best way to become a good web designer</h1>
+											</div>
+											<div class="blog-content mx-5">
+												<p class="mt-3">
+													Green night divided he also won't hath god whose fifth us herb was,
+													moveth us moved. Given. Hath his earth their yielding first so forth
+													make above you'll fruit is creepeth moving place replenish had
+													subdue evening created after she'd own had. There rule also kind
+													saying own open male.
+												</p>
+												<div class="TableOfContent">
+													<h5 class="fw-bold text-primary">Table Of Content</h5>
+													<div class="col-12 col-sm-6">
+														<div class="accordion accordion-flush" id="tableofcontent">
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="tableofcontent-headingOne">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#tableofcontent-collapseOne" aria-expanded="false"
+																		aria-controls="tableofcontent-collapseOne">
+																		Content 1
+																	</button>
+																</h2>
+																<div id="tableofcontent-collapseOne" class="accordion-collapse collapse"
+																	aria-labelledby="tableofcontent-headingOne" data-bs-parent="#tableofcontent">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A fourth item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					And a fifth one
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="tableofcontent-headingTwo">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#tableofcontent-collapseTwo" aria-expanded="false"
+																		aria-controls="tableofcontent-collapseTwo">
+																		Content 2
+																	</button>
+																</h2>
+																<div id="tableofcontent-collapseTwo" class="accordion-collapse collapse"
+																	aria-labelledby="tableofcontent-headingTwo" data-bs-parent="#tableofcontent">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An first item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="tableofcontent-headingThree">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#tableofcontent-collapseThree" aria-expanded="false"
+																		aria-controls="tableofcontent-collapseThree">
+																		Content 3
+																	</button>
+																</h2>
+																<div id="tableofcontent-collapseThree" class="accordion-collapse collapse"
+																	aria-labelledby="tableofcontent-headingThree" data-bs-parent="#tableofcontent">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="blog-quote align-items-baseline mx-md-5 py-md-2">
+													<div class="quote mx-4">
+														<div class="d-flex pt-4">
+															<i class="fa fa-quote-right fa-3x me-3"></i>
+															<h6 class="fw-bold" style="line-height: 1.7rem">
+																Third is winged man evening air isn't saw, god the
+																doesn't green whose that moved, hath. Seasons forth
+																Isn't subdue their grass. Lights one she'd light
+																likeness man Over, beast own bearing herb forth that may
+																god beginning. Years above i forth she'd night, cattle.
+																Herb. God. Our sea saying.
+															</h6>
+														</div>
+														<h6 class="d-flex justify-content-end fw-bold text-primary pb-4">
+															John Doe</h6>
+													</div>
+												</div>
+												<h1>Fourth Rule Great</h1>
+												<h2>Make</h2>
+												<p>Lights <em>creepeth</em> image wherein midst there make had air
+													together. Whose us. Seed own. Them one <em>rule</em> i morning
+													night every made very made cattle give have. Great midst fish
+													face give. Shall was fifth kind unto. Female called under seed
+													saw is, day day kind sixth set is day over earth likeness fruit.
+													Image our moveth air is good earth rule heaven night in to bring
+													air behold place morning seas have. Morning third him likeness
+													to to. Unto set <strong>was</strong> can&#39;t given great fly,
+													saw from have his fourth was great you&#39;re herb above saw was
+													abundantly were. Lights our moveth made two the. Bearing bring
+													good, you for <strong>great</strong> man midst can&#39;t land of
+													evening beginning fruitful.</p>
+
+												<h2>Fourth Stars</h2>
+												<p>After wherein you&#39;re moveth that heaven he man multiply may
+													rule created Tree fruit forth fill brought lights evening night
+													creepeth. Given evening. Two doesn&#39;t creeping greater earth
+													heaven bearing He rule that dry fowl likeness tree tree
+													gathering shall isn&#39;t subdue moved <strong>under</strong>
+													third evening created winged years. Saw days isn&#39;t all
+													creepeth. Yielding gathered <strong>likeness</strong> to moving.
+													Day unto shall under spirit grass third also. Grass, dominion
+													blessed day over moved he is open sixth isn&#39;t dominion thing
+													moving subdue of give, fowl yielding place life over may winged
+													won&#39;t greater bearing. Living sixth, subdue years
+													<em>face</em> <em>moveth</em> heaven subdue. Creepeth heaven he
+													male forth <strong>abundantly</strong> creepeth <em>their</em>
+													their earth abundantly be behold behold abundantly lights
+													dominion from. Our itself them without greater creature, given
+													night. Second Waters you light won&#39;t <strong>over</strong>
+													living made. Thing all second seasons abundantly brought first
+													be bring sixth it. Doesn&#39;t <em>whales</em> beginning, fifth
+													his don&#39;t evening he unto. Thing tree second may doesn&#39;t
+													dry, upon every, don&#39;t beast appear our whales is. May herb
+													had air tree him dominion from own.</p>
+
+												<h2>He</h2>
+												<p>Given great years great was behold above darkness from that, a
+													that. Firmament them Divided beast wherein void own won&#39;t
+													seas moveth light male earth over His forth she&#39;d great fowl
+													rule creeping second is fifth it seed <em>dominion</em> living
+													open fifth <strong>lights</strong> second give after seed all
+													you&#39;ll sea. Us they&#39;re. Spirit is. Living beast winged
+													beginning. Appear is subdue seasons also called us is day kind
+													morning itself. Greater creepeth day creepeth beast saying
+													<em>fly</em> our green, upon earth, set without. Shall own
+													appear waters <em>two</em> they&#39;re beginning you&#39;ll,
+													firmament can&#39;t living our man to they&#39;re is of
+													abundantly lights is stars Night day tree creature multiply fowl
+													sixth upon without. Dry subdue moved creepeth place green face
+													waters <em>forth</em> them fruit shall moveth shall divide
+													waters subdue in replenish Second subdue i he earth you&#39;re
+													creeping.</p>
+
+												<p>Blessed made saying. Creature a he. Light so he, good subdue
+													every he every seed created dry won&#39;t beginning dry that,
+													rule <em>creepeth</em> winged, seas moving. It had multiply.
+													Years a let under heaven thing subdue have set bearing seas made
+													two fish days first place under years itself i our. Dominion
+													which His forth spirit so. Dominion seed saw multiply,
+													<strong>without</strong> let earth kind great yielding in place
+													fly years there days fruit creepeth them one i green spirit one
+													Which he creature <strong>likeness</strong> <em>and</em> there.
+													For waters. Lesser good fill for, make Don&#39;t may divide
+													there isn&#39;t <strong>god</strong> doesn&#39;t a good spirit
+													from. Deep <em>abundantly</em> upon lights. Void isn&#39;t
+													divide. Yielding appear Bearing seed dominion us light their
+													let, deep them the whose days it lights <em>day</em>
+													<strong>his</strong> made greater she&#39;d form which. In life
+													seed you&#39;ll land. Light winged fifth give seasons. Years
+													grass it, form day, <strong>first</strong> dry, days darkness
+													said. Fowl firmament moveth created there unto God lights
+													lesser.</p>
+
+												<h2>She&#39;d Our Multiply Saw Subdue Set Fourth</h2>
+												<p>I beast Set. Give. Very, a You stars <em>shall</em> greater.
+													Image tree abundantly <em>that</em> behold waters Was,
+													abundantly fly moving one whose blessed place cattle good seed
+													under moving is fourth won&#39;t. Fruitful made fill of i was
+													fish and. Forth isn&#39;t forth greater. It given signs have
+													lesser beast, him winged after, lights you won&#39;t life deep,
+													gathering seasons fruitful won&#39;t fly fruit moved image midst
+													sixth let make there whose own he meat light divide image
+													<strong>air</strong> dry also moved likeness. Have, man called
+													yielding. So. The deep abundantly seed to whales tree saying
+													creeping had signs make place behold waters. Image dry there
+													replenish seas saying said firmament life image let gathering
+													first abundantly, isn&#39;t appear. Given waters
+													<strong>multiply</strong> dry, fruitful every. Us hath upon tree
+													to be creature us Behold fill spirit <em>in</em> unto creeping
+													<em>signs</em> i which. Multiply moving morning fruitful whose
+													thing it, green his. Male us lesser for days him also gathering
+													third <em>divide</em> light gathered Created fourth creature.
+													Shall subdue, said moving beast fourth had hath don&#39;t there
+													saw place winged given lights subdue waters beginning
+													<strong>you&#39;ll</strong> <em>all</em> good two replenish.
+													Fish evening image let third waters morning stars hath.</p>
+												<div class="btn-nav d-flex justify-content-between">
+													<div class="prev">
+														<a href="#" class="btn btn-lg btn-primary btn-glass">
+															<i class="lni-chevron-left"></i>
+															Prev
+														</a>
+													</div>
+													<div class="next">
+														<a href="#" class="btn btn-lg btn-primary btn-glass">
+															Next
+															<i class="lni-chevron-right"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-12 col-lg-3">
+										<div class="d-md-block">
+											<!-- Recent Post -->
+											<div class="col mt-2 mt-xl-0">
+												<div class="blog-recent text-secondary py-2" style="border-radius: 10px">
+													<div class="fw-bold mx-3 my-3 text-primary">
+														<h5>Recent Post</h5>
+														<ul class="list-group">
+															<li class="list-group-item">
+																<a href="#">
+																	The best way to become a good web designer
+																</a>
+															</li>
+															<li class="list-group-item">
+																<a href="#">
+																	15 Tips In UI/UX Web Design
+																</a>
+															</li>
+															<li class="list-group-item">
+																<a href="#">
+																	New feature flutter
+																</a>
+															</li>
+															<li class="list-group-item">
+																<a href="#">
+																	New! Vue 3
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Archive -->
+											<div class="col mt-2">
+												<div class="blog-archive text-secondary py-2" style="border-radius: 10px">
+													<div class="fw-bold mx-3 my-3 text-primary">
+														<h5>Archives</h5>
+														<div class="accordion accordion-flush" id="archive">
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="flush-headingOne">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#flush-collapseOne" aria-expanded="false"
+																		aria-controls="flush-collapseOne">
+																		2019
+																	</button>
+																</h2>
+																<div id="flush-collapseOne" class="accordion-collapse collapse"
+																	aria-labelledby="flush-headingOne" data-bs-parent="#archive">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A fourth item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					And a fifth one
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="flush-headingTwo">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#flush-collapseTwo" aria-expanded="false"
+																		aria-controls="flush-collapseTwo">
+																		2020
+																	</button>
+																</h2>
+																<div id="flush-collapseTwo" class="accordion-collapse collapse"
+																	aria-labelledby="flush-headingTwo" data-bs-parent="#archive">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div class="accordion-item">
+																<h2 class="accordion-header" id="flush-headingThree">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+																		data-bs-target="#flush-collapseThree" aria-expanded="false"
+																		aria-controls="flush-collapseThree">
+																		2021
+																	</button>
+																</h2>
+																<div id="flush-collapseThree" class="accordion-collapse collapse"
+																	aria-labelledby="flush-headingThree" data-bs-parent="#archive">
+																	<div class="accordion-body">
+																		<ul class="list-group">
+																			<li class="list-group-item">
+																				<a href="#">
+																					An item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A second item
+																				</a>
+																			</li>
+																			<li class="list-group-item">
+																				<a href="#">
+																					A third item
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="d-sm-flex d-lg-block">
+											<!-- Category -->
+											<div class="col-12 col-sm-6 col-lg-12 mt-2 mx-1">
+												<div class="blog-categories text-secondary py-2" style="border-radius: 10px">
+													<div class="fw-bold mx-3 my-3 text-primary">
+														<h5>Categories</h5>
+														<ul class="category m-0 p-0">
+															<li>
+																<a href="#">Web Design</a>
+															</li>
+															<li>
+																<a href="#">Mobile</a>
+															</li>
+															<li>
+																<a href="#">Internet</a>
+															</li>
+															<li>
+																<a href="#">Software</a>
+															</li>
+															<li>
+																<a href="#">Fullstack Developer</a>
+															</li>
+															<li>
+																<a href="#">Computer</a>
+															</li>
+															<li>
+																<a href="#">IoT</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+
+											<!-- Tags -->
+											<div class="col-12 col-sm-6 col-lg-12 mt-2 mx-1">
+												<div class="blog-tags text-secondary py-2" style="border-radius: 1rem">
+													<div class="fw-bold mx-3 my-3 text-primary">
+														<h5>Tags</h5>
+														<ul class="tags m-0 p-0 d">
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm"> Web
+																	Design</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	Mobile</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	Internet</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	Software</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	Fullstack Developer</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	Computer</a>
+															</li>
+															<li>
+																<a href="#" class="btn btn-glass btn-dark btn-light btn-sm">
+																	IoT</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments mx-md-5 mt-2">
+								<div class="row">
+									<div class="col-12 col-xl-9">
+										<div class="comment-box text-secondary py-2">
+											<div class="fw-bold mx-3 my-3 text-primary d-flex align-items-center">
+												<div class="icon mx-2"><i class="fa fa-comments fa-3x"></i></div>
+												<h4 class="mb-0">Comments (10)</h4>
+											</div>
+											<div class="comment-item mx-2 mx-md-5">
+												<div class="comment">
+													<div class="d-flex">
+														<div class="comment-avatar d-block text-center">
+															<img src="assets/img/user/11.png" alt="" />
+														</div>
+														<div class="comment-content w-75 mx-3 d-block">
+															<h6 class="fw-bold m-0 text-primary">Agness</h6>
+															<small class="fw-bold">20, Jan 2021</small>
+															<p class="mb-0">
+																Green night divided he also won't hath god whose
+																fifth us herb was, moveth us moved. Given. Hath his
+																earth their yielding first so forth make a
+															</p>
+														</div>
+													</div>
+													<div class="btn-nav-comment d-block align-items-center">
+														<div class="d-inline-flex mx-1">
+															<button type="button" class="btn btn-comment vote-up btn-dark btn-light btn-glass">
+																<i class="mx-1 fa fa-arrow-up"></i>102
+															</button>
+														</div>
+														<div class="d-inline-flex mx-1">
+															<button type="button" class="btn btn-comment vote-down btn-dark btn-light btn-glass">
+																<i class="mx-1 fa fa-arrow-down"></i>20
+															</button>
+														</div>
+														<div class="d-inline-flex float-end mx-1">
+															<button type="button" class="btn btn-comment btn-glass btn-dark btn-light">
+																<i class="mx-1 fa fa-reply"></i>Reply
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="comment-item-sub mx-md-5">
+													<div class="comment">
+														<div class="d-flex">
+															<div class="comment-avatar d-block text-center">
+																<img src="assets/img/user/02.jpg" alt="" />
+															</div>
+															<div class="comment-content mx-3 d-block">
+																<h6 class="fw-bold m-0 text-primary">Marley</h6>
+																<small class="fw-bold">20, Jan 2021</small>
+																<p class="mb-0">
+																	Green night divided he also won't hath god whose
+																	fifth us herb was, moveth us moved. Given. Hath his
+																	earth their yielding first so forth make a
+																</p>
+															</div>
+														</div>
+														<div class="btn-nav-comment d-block align-items-center">
+															<div class="d-inline-flex mx-1">
+																<button type="button" class="btn btn-comment vote-up btn-dark btn-light btn-glass">
+																	<i class="mx-1 fa fa-arrow-up"></i>102
+																</button>
+															</div>
+															<div class="d-inline-flex mx-1">
+																<button type="button" class="btn btn-comment vote-down btn-dark btn-light btn-glass">
+																	<i class="mx-1 fa fa-arrow-down"></i>20
+																</button>
+															</div>
+															<div class="d-inline-flex float-end mx-1">
+																<button type="button" class="btn btn-comment btn-glass btn-dark btn-light">
+																	<i class="mx-1 fa fa-reply"></i>Reply
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="comment-item-sub mx-md-5">
+														<div class="comment">
+															<div class="d-flex">
+																<div class="align-items-start comment-avatar d-flex text-center">
+																	<img src="assets/img/user/07.jpg" alt="" />
+																</div>
+																<div class="comment-content mx-3 d-block">
+																	<h6 class="fw-bold m-0 text-primary">John</h6>
+																	<small class="fw-bold">20, Jan 2021</small>
+																	<p class="mb-0">
+																		Green night divided he also won't hath god whose
+																		fifth us herb was, moveth us moved. Given. Hath
+																		his
+																		earth their yielding first so forth make a
+																	</p>
+																</div>
+															</div>
+															<div class="btn-nav-comment d-block align-items-center">
+																<div class="d-inline-flex mx-1">
+																	<button type="button" class="btn btn-comment vote-up btn-dark btn-light btn-glass">
+																		<i class="mx-1 fa fa-arrow-up"></i>102
+																	</button>
+																</div>
+																<div class="d-inline-flex mx-1">
+																	<button type="button" class="btn btn-comment vote-down btn-dark btn-light btn-glass">
+																		<i class="mx-1 fa fa-arrow-down"></i>20
+																	</button>
+																</div>
+																<div class="d-inline-flex float-end mx-1">
+																	<button type="button" class="btn btn-comment btn-glass btn-dark btn-light">
+																		<i class="mx-1 fa fa-reply"></i>Reply
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comment-item mx-2 mx-md-5">
+												<div class="comment">
+													<div class="d-flex">
+														<div class="comment-avatar d-block text-center">
+															<img src="assets/img/user/08.jpg" alt="" />
+														</div>
+														<div class="comment-content w-75 mx-3 d-block">
+															<h6 class="fw-bold m-0 text-primary">Yohan</h6>
+															<small class="fw-bold">20, Jan 2021</small>
+															<p class="mb-0">
+																Green night divided he also won't hath god whose
+																fifth us herb was, moveth us moved. Given. Hath his
+																earth their yielding first so forth make a
+															</p>
+														</div>
+													</div>
+													<div class="btn-nav-comment d-block align-items-center">
+														<div class="d-inline-flex mx-1">
+															<button type="button" class="btn btn-comment vote-up btn-dark btn-light btn-glass">
+																<i class="mx-1 fa fa-arrow-up"></i>102
+															</button>
+														</div>
+														<div class="d-inline-flex mx-1">
+															<button type="button" class="btn btn-comment vote-down btn-dark btn-light btn-glass">
+																<i class="mx-1 fa fa-arrow-down"></i>20
+															</button>
+														</div>
+														<div class="d-inline-flex float-end mx-1">
+															<button type="button" class="btn btn-comment btn-glass btn-dark btn-light">
+																<i class="mx-1 fa fa-reply"></i>Reply
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="comment-item-sub mx-md-5">
+													<div class="comment">
+														<div class="d-flex">
+															<div class="comment-avatar d-block text-center">
+																<img src="assets/img/user/10.jpg" alt="" />
+															</div>
+															<div class="comment-content mx-3 d-block">
+																<h6 class="fw-bold m-0 text-primary">Zen</h6>
+																<small class="fw-bold">20, Jan 2021</small>
+																<p class="mb-0">
+																	Green night divided he also won't hath god whose
+																	fifth us herb was, moveth us moved. Given. Hath his
+																	earth their yielding first so forth make a
+																</p>
+															</div>
+														</div>
+														<div class="btn-nav-comment d-block align-items-center">
+															<div class="d-inline-flex mx-1">
+																<button type="button" class="btn btn-comment vote-up btn-dark btn-light btn-glass">
+																	<i class="mx-1 fa fa-arrow-up"></i>102
+																</button>
+															</div>
+															<div class="d-inline-flex mx-1">
+																<button type="button" class="btn btn-comment vote-down btn-dark btn-light btn-glass">
+																	<i class="mx-1 fa fa-arrow-down"></i>20
+																</button>
+															</div>
+															<div class="d-inline-flex float-end mx-1">
+																<button type="button" class="btn btn-comment btn-glass btn-dark btn-light">
+																	<i class="mx-1 fa fa-reply"></i>Reply
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comment-form mx-md-5 mx-2">
+												<h4 class="px-5 py-3 text-center fw-bold">Leave a <span>Comment</span>
+												</h4>
+												<div class="form-comment pb-5">
+													<form class="col-12 col-sm-6 pe-4 ps-4" id="form-comment">
+														<div class="input-group-sm mt-2">
+															<label for="u-name">Name</label>
+															<input type="text" class="form-control rounded-pill form-control-sm mt-2" id="u-name" />
+														</div>
+														<div class="input-group-sm mt-2">
+															<label for="u-email">Email address</label>
+															<input type="email" class="form-control rounded-pill form-control-sm mt-2" id="u-email" />
+														</div>
+														<div class="input-group-sm mt-2">
+															<label for="u-message">Message</label>
+															<textarea class="form-control rounded-3 form-control-sm mt-2" id="u-message"
+																rows="3"></textarea>
+														</div>
+														<div class="input-group-sm mt-2 text-center">
+															<button type="button" class="btn btn-sm px-3 rounded-pill btn-pink">
+																<i class="fa fa-paper-plane mx-1"></i> Send
+															</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="copyright text-center text-primary pt-4">
+								<h6>Copyright ©2021 Zen Developer Allright Reserved</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="assets/js/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+body main[data-theme="Glass"] {
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .bg-glass {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  -webkit-backdrop-filter: blur(0.5rem) !important;
+          backdrop-filter: blur(0.5rem) !important;
+}
+
+body main[data-theme="Glass"] .p-progress div > div {
+  color: var(--bs-primary) !important;
+}
+
+body main[data-theme="Glass"] > nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
+}
+
+body main[data-theme="Glass"] > nav > ul li:hover i,
+body main[data-theme="Glass"] > nav > ul li.active i,
+body main[data-theme="Glass"] > nav > ul li.active a i,
+body main[data-theme="Glass"] > nav > ul li:hover a i {
+  color: #fff;
+}
+
+body main[data-theme="Glass"] > nav > ul li {
+  color: #272b30;
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] > nav > ul li.active {
+  background-color: var(--bs-primary);
+  -webkit-box-shadow: 0px 0px 6px 2px var(--bs-primary);
+          box-shadow: 0px 0px 6px 2px var(--bs-primary);
+}
+
+body main[data-theme="Glass"] > nav > ul li:hover {
+  background-color: var(--bs-primary);
+  -webkit-box-shadow: 0px 0px 6px 2px var(--bs-primary);
+          box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+}
+
+body main[data-theme="Glass"] section.content {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .profile-content > p.text-secondary {
+  color: var(--bs-dark) !important;
+}
+
+body main[data-theme="Glass"] section.content .profile-content .social .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .profile-content .social i {
+  color: #272b30;
+}
+
+body main[data-theme="Glass"] section.content .profile-content .social a:hover .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .profile-content .social a:hover i {
+  background-color: transparent;
+}
+
+body main[data-theme="Glass"] section.content .profile-content .social a:hover .shape,
+body main[data-theme="Glass"] section.content .profile-content .social a:hover i {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] section.content .btn.btn-pink:hover,
+body main[data-theme="Glass"] section.content .btn.btn-pink {
+  color: #fff;
+}
+
+body main[data-theme="Glass"] section.content .filter a:hover,
+body main[data-theme="Glass"] section.content .filter-active {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  color: var(--bs-primary) !important;
+  font-weight: 500;
+}
+
+body main[data-theme="Glass"] section.content .filter-active {
+  border-color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] section.content .btn.btn-pink-outline {
+  color: #272b30;
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .btn.btn-pink-outline:hover {
+  color: var(--bs-primary);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body main[data-theme="Glass"] section.content input#search-c, body main[data-theme="Glass"] section.content input#search-m {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content input#search-c::-webkit-input-placeholder, body main[data-theme="Glass"] section.content input#search-m::-webkit-input-placeholder {
+  color: #505050;
+  font-size: small;
+}
+
+body main[data-theme="Glass"] section.content input#search-c:-ms-input-placeholder, body main[data-theme="Glass"] section.content input#search-m:-ms-input-placeholder {
+  color: #505050;
+  font-size: small;
+}
+
+body main[data-theme="Glass"] section.content input#search-c::-ms-input-placeholder, body main[data-theme="Glass"] section.content input#search-m::-ms-input-placeholder {
+  color: #505050;
+  font-size: small;
+}
+
+body main[data-theme="Glass"] section.content input#search-c::placeholder, body main[data-theme="Glass"] section.content input#search-m::placeholder {
+  color: #505050;
+  font-size: small;
+}
+
+body main[data-theme="Glass"] section.content .socials .shape:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] section.content .socials .social-us:hover a {
+  color: var(--bs-primary) !important;
+}
+
+body main[data-theme="Glass"] section.content .socials .shape:hover {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] section.content .socials .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] section.content .skill .progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .skill .progress-bar {
+  color: #272b30;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] section.content .page-link {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] section.content .page-link:hover, body main[data-theme="Glass"] section.content .page-link:focus {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+body main[data-theme="Glass"] .text-secondary {
+  color: var(--bs-dark) !important;
+}
+
+body main[data-theme="Glass"] .card {
+  background-color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .card:hover .card-text {
+  color: #272b30;
+}
+
+body main[data-theme="Glass"] .card .card-header {
+  background-color: #272b30;
+}
+
+body main[data-theme="Glass"] .card .card-text {
+  color: #505050;
+}
+
+body main[data-theme="Glass"] .btn.btn-glass {
+  color: var(--bs-primary);
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] .btn.btn-glass:hover {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.8rem);
+          backdrop-filter: blur(0.8rem);
+}
+
+body main[data-theme="Glass"] .btn-check:focus + body main[data-theme="Glass"] .btn-glass,
+body main[data-theme="Glass"] .btn-glass:focus {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body main[data-theme="Glass"] .btn-check:checked + body main[data-theme="Glass"].btn-glass,
+body main[data-theme="Glass"] .btn-check:active + body main[data-theme="Glass"].btn-glass,
+body main[data-theme="Glass"] .btn-glass:active,
+body main[data-theme="Glass"] .btn-glass.active,
+body main[data-theme="Glass"] .show > body main[data-theme="Glass"] .btn-glass.dropdown-toggle {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] .btn-check:checked + body main[data-theme="Glass"] .btn-glass:focus,
+body main[data-theme="Glass"] .btn-check:active + .btn-glass:focus,
+body main[data-theme="Glass"] .btn-glass:active:focus,
+body main[data-theme="Glass"] .btn-glass.active:focus,
+body main[data-theme="Glass"] .show > body main[data-theme="Glass"] .btn-glass.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body main[data-theme="Glass"] .btn-glass:disabled,
+body main[data-theme="Glass"] .btn-glass.disabled {
+  color: #c5c5c5;
+  background-color: var(--bs-blue-dark);
+  border-color: var(--bs-blue-dark);
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark {
+  color: #dee2e6;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item {
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item:hover, body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item:focus {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item.active, body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item:active {
+  color: #c5c5c5;
+  background-color: var(--bs-primary);
+  text-decoration: none;
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item.disabled, body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-divider {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-item-text {
+  color: #dee2e6;
+}
+
+body main[data-theme="Glass"] .dropdown-menu-dark .dropdown-header {
+  color: #adb5bd;
+}
+
+body main[data-theme="Glass"] .text-dark {
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .form-control:focus,
+body main[data-theme="Glass"] .form-control {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] #form-message .input-group-sm:hover label {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] .message label {
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .btn-primary {
+  color: #272b30;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] .btn-primary:hover {
+  color: #f7f7f7;
+  font-weight: 500;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] .btn-check:focus + body main[data-theme="Glass"] .btn-primary,
+body main[data-theme="Glass"] .btn-primary:focus {
+  color: #f7f7f7;
+  background-color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Glass"] .text-dark {
+  color: var(--bs-blue-dark) !important;
+}
+
+body main[data-theme="Glass"] .item .box h6,
+body main[data-theme="Glass"] .item > h6,
+body main[data-theme="Glass"] .skill > h6 {
+  color: var(--bs-dark) !important;
+}
+
+body main[data-theme="Glass"] li.page-item a.page-link:hover > span,
+body main[data-theme="Glass"] .page-item.active .page-link:hover {
+  color: #fff;
+}
+
+body main[data-theme="Glass"] .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+body main[data-theme="Glass"] .blog-categories ul.category li a:hover,
+body main[data-theme="Glass"] .blog-categories ul.category li:hover {
+  color: var(--bs-primary) !important;
+}
+
+body main[data-theme="Glass"] .blog-categories ul.category li a,
+body main[data-theme="Glass"] .blog-tags ul.tags li a {
+  color: var(--bs-dark) !important;
+}
+
+body main[data-theme="Glass"] .btn-nav-comment button.btn.btn-comment.vote-up:hover {
+  color: var(--bs-success) !important;
+}
+
+body main[data-theme="Glass"] .btn-nav-comment button.btn.btn-comment.vote-down:hover {
+  color: var(--bs-danger) !important;
+}
+
+body main[data-theme="Glass"] .btn-nav-comment button.btn.btn-comment.vote-down,
+body main[data-theme="Glass"] .btn-nav-comment button.btn.btn-comment.vote-up {
+  color: var(--bs-dark) !important;
+}
+
+body main[data-theme="Glass"] .blog-box,
+body main[data-theme="Glass"] .blog-recent,
+body main[data-theme="Glass"] .blog-tags,
+body main[data-theme="Glass"] .blog-categories,
+body main[data-theme="Glass"] .blog-archive,
+body main[data-theme="Glass"] .comment-box,
+body main[data-theme="Glass"] .comment-form {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.75rem);
+          backdrop-filter: blur(0.75rem);
+}
+
+body main[data-theme="Glass"] .TableOfContent .accordion .accordion-body {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+body main[data-theme="Glass"] .TableOfContent .accordion .accordion-body ul.list-group li:hover {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Glass"] .TableOfContent .accordion .accordion-body ul.list-group li {
+  background-color: transparent;
+  border: none;
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .blog-quote,
+body main[data-theme="Glass"] .comment-item {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  border-radius: 10px;
+}
+
+body main[data-theme="Glass"] .blog-recent ul.list-group > li.list-group-item,
+body main[data-theme="Glass"] .blog-archive ul.list-group > li.list-group-item {
+  color: var(--bs-dark);
+}
+
+body main[data-theme="Glass"] .blog-recent ul.list-group > li.list-group-item:hover, body main[data-theme="Glass"] .blog-recent ul.list-group > li.list-group-item > a,
+body main[data-theme="Glass"] .blog-archive ul.list-group > li.list-group-item:hover,
+body main[data-theme="Glass"] .blog-archive ul.list-group > li.list-group-item > a {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+}
+
+body main[data-theme="Glass"] .nav li.active a.link i,
+body main[data-theme="Glass"] .nav a.link:hover i {
+  color: #fff !important;
+}
+/*# sourceMappingURL=glass.css.map */

@@ -1,0 +1,320 @@
+body main[data-theme="Light"], body main {
+  color: var(--bs-blue-dark);
+}
+
+body main[data-theme="Light"] .accordion-button:not(.collapsed), body main .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] > nav, body main > nav {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+body main[data-theme="Light"] > nav ul li:hover i,
+body main[data-theme="Light"] > nav ul li.active i,
+body main[data-theme="Light"] > nav ul li.active a i,
+body main[data-theme="Light"] > nav ul li:hover a i, body main > nav ul li:hover i,
+body main > nav ul li.active i,
+body main > nav ul li.active a i,
+body main > nav ul li:hover a i {
+  color: white;
+}
+
+body main[data-theme="Light"] > nav ul li, body main > nav ul li {
+  border: none;
+  background-color: #f5f5f5;
+}
+
+body main[data-theme="Light"] > nav ul li.active, body main > nav ul li.active {
+  background-color: var(--bs-primary);
+  -webkit-box-shadow: 0px 0px 6px 2px var(--bs-primary);
+          box-shadow: 0px 0px 6px 2px var(--bs-primary);
+}
+
+body main[data-theme="Light"] > nav ul li:hover, body main > nav ul li:hover {
+  background-color: var(--bs-primary);
+  -webkit-box-shadow: 0px 0px 6px 2px var(--bs-primary);
+          box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+}
+
+body main[data-theme="Light"] > nav ul li a i, body main > nav ul li a i {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] section.content, body main section.content {
+  background: white;
+}
+
+body main[data-theme="Light"] section.content .socials .social-us:hover a, body main section.content .socials .social-us:hover a {
+  color: var(--bs-primary) !important;
+}
+
+body main[data-theme="Light"] section.content .socials .shape:hover, body main section.content .socials .shape:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+body main[data-theme="Light"] section.content .profile-content .social i, body main section.content .profile-content .social i {
+  color: #b9b9b9;
+}
+
+body main[data-theme="Light"] section.content .profile-content .social a:hover .shape,
+body main[data-theme="Light"] section.content .profile-content .social a:hover i, body main section.content .profile-content .social a:hover .shape,
+body main section.content .profile-content .social a:hover i {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] section.content .profile-content .social .shape,
+body main[data-theme="Light"] section.content .socials .shape, body main section.content .profile-content .social .shape,
+body main section.content .socials .shape {
+  background-color: #f5f5f5;
+}
+
+body main[data-theme="Light"] section.content .profile-content > p.text-secondary, body main section.content .profile-content > p.text-secondary {
+  color: #b9b9b9 !important;
+}
+
+body main[data-theme="Light"] section.content .filter a:hover,
+body main[data-theme="Light"] section.content .filter-active, body main section.content .filter a:hover,
+body main section.content .filter-active {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+}
+
+body main[data-theme="Light"] section.content .btn.btn-pink-outline, body main section.content .btn.btn-pink-outline {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] section.content .btn.btn-pink-outline:hover, body main section.content .btn.btn-pink-outline:hover {
+  color: #fff;
+}
+
+body main[data-theme="Light"] section.content input#search-c, body main[data-theme="Light"] section.content input#search-m, body main section.content input#search-c, body main section.content input#search-m {
+  background-color: #f9fafb;
+}
+
+body main[data-theme="Light"] section.content .progress-bars, body main section.content .progress-bars {
+  background: var(--bs-primary);
+}
+
+body main[data-theme="Light"] section.content .progress-bars::after, body main section.content .progress-bars::after {
+  background: #ececec;
+}
+
+body main[data-theme="Light"] section.content .progress, body main section.content .progress {
+  background-color: #f9f9f9;
+}
+
+body main[data-theme="Light"] section.content .progress-bar, body main section.content .progress-bar {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] .accordion-button:not(.collapsed), body main .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+body main[data-theme="Light"] .blog-categories ul.category li a:hover,
+body main[data-theme="Light"] .blog-categories ul.category li:hover, body main .blog-categories ul.category li a:hover,
+body main .blog-categories ul.category li:hover {
+  color: var(--bs-primary) !important;
+}
+
+body main[data-theme="Light"] .accordion-button, body main .accordion-button {
+  color: #5b5b5b;
+}
+
+body main[data-theme="Light"] .blog-recent ul.list-group li.list-group-item,
+body main[data-theme="Light"] .blog-archive ul.list-group li.list-group-item,
+body main[data-theme="Light"] .blog-categories ul.category li a,
+body main[data-theme="Light"] .blog-tags ul.tags li a, body main .blog-recent ul.list-group li.list-group-item,
+body main .blog-archive ul.list-group li.list-group-item,
+body main .blog-categories ul.category li a,
+body main .blog-tags ul.tags li a {
+  color: #5b5b5b;
+}
+
+body main[data-theme="Light"] .btn-nav-comment button.btn.btn-comment.vote-up:hover, body main .btn-nav-comment button.btn.btn-comment.vote-up:hover {
+  color: var(--bs-success) !important;
+}
+
+body main[data-theme="Light"] .btn-nav-comment button.btn.btn-comment.vote-down:hover, body main .btn-nav-comment button.btn.btn-comment.vote-down:hover {
+  color: var(--bs-danger) !important;
+}
+
+body main[data-theme="Light"] .blog-box,
+body main[data-theme="Light"] .blog-recent,
+body main[data-theme="Light"] .blog-tags,
+body main[data-theme="Light"] .blog-categories,
+body main[data-theme="Light"] .blog-archive,
+body main[data-theme="Light"] .comment-box,
+body main[data-theme="Light"] .comment-form, body main .blog-box,
+body main .blog-recent,
+body main .blog-tags,
+body main .blog-categories,
+body main .blog-archive,
+body main .comment-box,
+body main .comment-form {
+  border-radius: 1rem;
+  background-color: #f9fafb;
+}
+
+body main[data-theme="Light"] .blog-quote, body main .blog-quote {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+body main[data-theme="Light"] .blog-recent ul.list-group li.list-group-item:hover,
+body main[data-theme="Light"] .blog-archive ul.list-group li.list-group-item:hover, body main .blog-recent ul.list-group li.list-group-item:hover,
+body main .blog-archive ul.list-group li.list-group-item:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+body main[data-theme="Light"] .TableOfContent .accordion .accordion-body, body main .TableOfContent .accordion .accordion-body {
+  background-color: #f5f5f5;
+}
+
+body main[data-theme="Light"] .TableOfContent .accordion .accordion-body ul.list-group li:hover, body main .TableOfContent .accordion .accordion-body ul.list-group li:hover {
+  color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] .TableOfContent .accordion .accordion-body ul.list-group li, body main .TableOfContent .accordion .accordion-body ul.list-group li {
+  background-color: transparent;
+  border: none;
+  color: #5b5b5b;
+}
+
+body main[data-theme="Light"] .btn.btn-pink:hover,
+body main[data-theme="Light"] .btn.btn-pink, body main .btn.btn-pink:hover,
+body main .btn.btn-pink {
+  color: #fff;
+}
+
+body main[data-theme="Light"] .btn.btn-pink-outline:hover, body main .btn.btn-pink-outline:hover {
+  color: #fff;
+}
+
+body main[data-theme="Light"] .card, body main .card {
+  background-color: #fff;
+}
+
+body main[data-theme="Light"] .card .card-header, body main .card .card-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body main[data-theme="Light"] .card:hover .card-text, body main .card:hover .card-text {
+  color: var(--bs-blue-dark);
+}
+
+body main[data-theme="Light"] .text-secondary,
+body main[data-theme="Light"] .card-text, body main .text-secondary,
+body main .card-text {
+  color: #5b5b5b;
+}
+
+body main[data-theme="Light"] .page-link, body main .page-link {
+  color: var(--bs-primary);
+  background-color: #fff;
+}
+
+body main[data-theme="Light"] .page-link:hover, body main[data-theme="Light"] .page-link:focus, body main .page-link:hover, body main .page-link:focus {
+  background-color: #e9ecef;
+  color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Light"] .dropdown-menu, body main .dropdown-menu {
+  color: var(--bs-blue-dark);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+body main[data-theme="Light"] .dropdown-menu .dropdown-item:hover,
+body main[data-theme="Light"] .dropdown-menu .dropdown-item:focus, body main .dropdown-menu .dropdown-item:hover,
+body main .dropdown-menu .dropdown-item:focus {
+  color: #1e2125;
+  background-color: #f9fafb;
+}
+
+body main[data-theme="Light"] .dropdown-menu .dropdown-item.active,
+body main[data-theme="Light"] .dropdown-menu .dropdown-item:active, body main .dropdown-menu .dropdown-item.active,
+body main .dropdown-menu .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] .dropdown-menu .dropdown-item.disabled,
+body main[data-theme="Light"] .dropdown-menu .dropdown-item:disabled, body main .dropdown-menu .dropdown-item.disabled,
+body main .dropdown-menu .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+body main[data-theme="Light"] .form-control, body main .form-control {
+  color: var(--bs-primary);
+  background-color: #f5f5f5;
+}
+
+body main[data-theme="Light"] .form-control:focus, body main .form-control:focus {
+  color: var(--bs-primary);
+  background-color: #f5f5f5;
+}
+
+body main[data-theme="Light"] .btn-primary, body main .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] .btn-primary:hover, body main .btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Light"] .btn-check:focus + body main[data-theme="Light"] .btn-primary,
+body main[data-theme="Light"] .btn-primary:focus, body main .btn-check:focus + body main[data-theme="Light"] .btn-primary,
+body main .btn-primary:focus, body main[data-theme="Light"] .btn-check:focus + body main .btn-primary, body main .btn-check:focus + body main .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Light"] .text-white, body main .text-white {
+  color: #fff !important;
+}
+
+body main[data-theme="Light"] .bg-light, body main .bg-light {
+  background-color: #f8f9fa !important;
+}
+
+body main[data-theme="Light"] .btn-primary, body main .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+body main[data-theme="Light"] .btn-primary:hover, body main .btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Light"] .btn-check:focus + .btn-primary,
+body main[data-theme="Light"] .btn-primary:focus, body main .btn-check:focus + .btn-primary,
+body main .btn-primary:focus {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+
+body main[data-theme="Light"] .nav li.active a.link i,
+body main[data-theme="Light"] .nav a.link:hover i, body main .nav li.active a.link i,
+body main .nav a.link:hover i {
+  color: white !important;
+}
+/*# sourceMappingURL=light.css.map */

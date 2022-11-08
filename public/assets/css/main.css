@@ -1,0 +1,1431 @@
+/*  
+	// Template Name	: Frostofolio - Fully Responsive Personal Template
+	// Author 				: Zen Developer
+	// Version 				: 1.0.1
+	// Copyright 			: Copyright 2021 by Zen Developer
+	// Created 				: March 2021 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+}
+body, body section.blog-page > .modal {
+  background-image: url("../img/Gradient-3.jpg");
+}
+
+/* === Theme Mode === */
+/* Glass Mode */
+body main[data-theme=Glass] {
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .bg-glass {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(0.5rem) !important;
+}
+body main[data-theme=Glass] .p-progress div > div {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Glass] > nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.3rem);
+}
+body main[data-theme=Glass] > nav > ul li:hover i, body main[data-theme=Glass] > nav > ul li.active i, body main[data-theme=Glass] > nav > ul li.active a i, body main[data-theme=Glass] > nav > ul li:hover a i {
+  color: #fff;
+}
+body main[data-theme=Glass] > nav > ul li {
+  color: #272b30;
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] > nav > ul li.active {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+}
+body main[data-theme=Glass] > nav > ul li:hover {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  transition: ease-in-out;
+}
+body main[data-theme=Glass] section.content {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .profile-content > p.text-secondary {
+  color: var(--bs-dark) !important;
+}
+body main[data-theme=Glass] section.content .profile-content .social .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .profile-content .social i {
+  color: #272b30;
+}
+body main[data-theme=Glass] section.content .profile-content .social a:hover .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .profile-content .social a:hover i {
+  background-color: transparent;
+}
+body main[data-theme=Glass] section.content .profile-content .social a:hover .shape, body main[data-theme=Glass] section.content .profile-content .social a:hover i {
+  color: var(--bs-primary);
+}
+body main[data-theme=Glass] section.content .btn.btn-pink:hover, body main[data-theme=Glass] section.content .btn.btn-pink {
+  color: #fff;
+}
+body main[data-theme=Glass] section.content .filter a:hover, body main[data-theme=Glass] section.content .filter-active {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(0.5rem);
+  color: var(--bs-primary) !important;
+  font-weight: 500;
+}
+body main[data-theme=Glass] section.content .filter-active {
+  border-color: var(--bs-primary);
+}
+body main[data-theme=Glass] section.content .btn.btn-pink-outline {
+  color: #272b30;
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .btn.btn-pink-outline:hover {
+  color: var(--bs-primary);
+  box-shadow: none;
+}
+body main[data-theme=Glass] section.content input#search-c, body main[data-theme=Glass] section.content input#search-m {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content input#search-c::placeholder, body main[data-theme=Glass] section.content input#search-m::placeholder {
+  color: #505050;
+  font-size: small;
+}
+body main[data-theme=Glass] section.content .socials .shape:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+  color: var(--bs-primary);
+}
+body main[data-theme=Glass] section.content .socials .social-us:hover a {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Glass] section.content .socials .shape:hover {
+  color: var(--bs-primary);
+}
+body main[data-theme=Glass] section.content .socials .shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] section.content .skill .progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .skill .progress-bar {
+  color: #272b30;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Glass] section.content .page-link {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] section.content .page-link:hover, body main[data-theme=Glass] section.content .page-link:focus {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body main[data-theme=Glass] .text-secondary {
+  color: var(--bs-dark) !important;
+}
+body main[data-theme=Glass] .card {
+  background-color: var(--bs-dark);
+}
+body main[data-theme=Glass] .card:hover .card-text {
+  color: #272b30;
+}
+body main[data-theme=Glass] .card .card-header {
+  background-color: #272b30;
+}
+body main[data-theme=Glass] .card .card-text {
+  color: #505050;
+}
+body main[data-theme=Glass] .btn.btn-glass {
+  color: var(--bs-primary);
+  font-weight: 500;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] .btn.btn-glass:hover {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.8rem);
+}
+body main[data-theme=Glass] .btn-check:focus + body main[data-theme=Glass] .btn-glass, body main[data-theme=Glass] .btn-glass:focus {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+  box-shadow: none;
+}
+body main[data-theme=Glass] .btn-check:checked + body main[data-theme=Glass].btn-glass, body main[data-theme=Glass] .btn-check:active + body main[data-theme=Glass].btn-glass, body main[data-theme=Glass] .btn-glass:active, body main[data-theme=Glass] .btn-glass.active, body main[data-theme=Glass] .show > body main[data-theme=Glass] .btn-glass.dropdown-toggle {
+  color: #272b30;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] .btn-check:checked + body main[data-theme=Glass] .btn-glass:focus, body main[data-theme=Glass] .btn-check:active + .btn-glass:focus, body main[data-theme=Glass] .btn-glass:active:focus, body main[data-theme=Glass] .btn-glass.active:focus, body main[data-theme=Glass] .show > body main[data-theme=Glass] .btn-glass.dropdown-toggle:focus {
+  box-shadow: none;
+}
+body main[data-theme=Glass] .btn-glass:disabled, body main[data-theme=Glass] .btn-glass.disabled {
+  color: #c5c5c5;
+  background-color: var(--bs-blue-dark);
+  border-color: var(--bs-blue-dark);
+}
+body main[data-theme=Glass] .dropdown-menu-dark {
+  color: #dee2e6;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item {
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item:hover, body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item:focus {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item.active, body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item:active {
+  color: #c5c5c5;
+  background-color: var(--bs-primary);
+  text-decoration: none;
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item.disabled, body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-divider {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-item-text {
+  color: #dee2e6;
+}
+body main[data-theme=Glass] .dropdown-menu-dark .dropdown-header {
+  color: #adb5bd;
+}
+body main[data-theme=Glass] .text-dark {
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .form-control:focus, body main[data-theme=Glass] .form-control {
+  color: var(--bs-primary);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] #form-message .input-group-sm:hover label {
+  color: var(--bs-primary);
+}
+body main[data-theme=Glass] .message label {
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .btn-primary {
+  color: #272b30;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] .btn-primary:hover {
+  color: #f7f7f7;
+  font-weight: 500;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Glass] .btn-check:focus + body main[data-theme=Glass] .btn-primary, body main[data-theme=Glass] .btn-primary:focus {
+  color: #f7f7f7;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Glass] .text-dark {
+  color: var(--bs-blue-dark) !important;
+}
+body main[data-theme=Glass] .item .box h6, body main[data-theme=Glass] .item > h6, body main[data-theme=Glass] .skill > h6 {
+  color: var(--bs-dark) !important;
+}
+body main[data-theme=Glass] li.page-item a.page-link:hover > span, body main[data-theme=Glass] .page-item.active .page-link:hover {
+  color: #fff;
+}
+body main[data-theme=Glass] .page-item.active .page-link {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body main[data-theme=Glass] .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body main[data-theme=Glass] .blog-categories ul.category li a:hover, body main[data-theme=Glass] .blog-categories ul.category li:hover {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Glass] .blog-categories ul.category li a, body main[data-theme=Glass] .blog-tags ul.tags li a {
+  color: var(--bs-dark) !important;
+}
+body main[data-theme=Glass] .btn-nav-comment button.btn.btn-comment.vote-up:hover {
+  color: var(--bs-success) !important;
+}
+body main[data-theme=Glass] .btn-nav-comment button.btn.btn-comment.vote-down:hover {
+  color: var(--bs-danger) !important;
+}
+body main[data-theme=Glass] .btn-nav-comment button.btn.btn-comment.vote-down,
+body main[data-theme=Glass] .btn-nav-comment button.btn.btn-comment.vote-up {
+  color: var(--bs-dark) !important;
+}
+body main[data-theme=Glass] .blog-box, body main[data-theme=Glass] .blog-recent, body main[data-theme=Glass] .blog-tags, body main[data-theme=Glass] .blog-categories, body main[data-theme=Glass] .blog-archive, body main[data-theme=Glass] .comment-box, body main[data-theme=Glass] .comment-form {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.75rem);
+}
+body main[data-theme=Glass] .TableOfContent .accordion .accordion-body {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(0.5rem);
+}
+body main[data-theme=Glass] .TableOfContent .accordion .accordion-body ul.list-group li:hover {
+  color: var(--bs-primary);
+}
+body main[data-theme=Glass] .TableOfContent .accordion .accordion-body ul.list-group li {
+  background-color: transparent;
+  border: none;
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .blog-quote, body main[data-theme=Glass] .comment-item {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 10px;
+}
+body main[data-theme=Glass] .blog-recent ul.list-group li.list-group-item:hover, body main[data-theme=Glass] .blog-archive ul.list-group li.list-group-item:hover {
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Glass] .blog-recent ul.list-group li.list-group-item:hover a, body main[data-theme=Glass] .blog-archive ul.list-group li.list-group-item:hover a {
+  color: white;
+}
+body main[data-theme=Glass] .blog-recent ul.list-group li.list-group-item a, body main[data-theme=Glass] .blog-archive ul.list-group li.list-group-item a {
+  color: var(--bs-dark);
+}
+body main[data-theme=Glass] .nav li.active a.link i, body main[data-theme=Glass] .nav a.link:hover i {
+  color: #fff !important;
+}
+
+/* Dark Mode */
+body main[data-theme=Dark], body main.Dark {
+  color: #fff;
+}
+body main[data-theme=Dark] div.modal-content, body main.Dark div.modal-content {
+  background-color: #1c1f23 !important;
+}
+body main[data-theme=Dark] > nav, body main.Dark > nav {
+  background-color: var(--bs-dark);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+body main[data-theme=Dark] > nav ul li:hover a i, body main[data-theme=Dark] > nav ul li.active a i, body main.Dark > nav ul li:hover a i, body main.Dark > nav ul li.active a i {
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] > nav ul li, body main.Dark > nav ul li {
+  border: none;
+  background-color: #272b30;
+}
+body main[data-theme=Dark] > nav ul li.active, body main.Dark > nav ul li.active {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+}
+body main[data-theme=Dark] > nav ul li:hover, body main.Dark > nav ul li:hover {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  transition: ease-in-out;
+}
+body main[data-theme=Dark] > nav ul li a i, body main.Dark > nav ul li a i {
+  color: var(--bs-primary);
+}
+body main[data-theme=Dark] .btn.btn-pink:hover, body main[data-theme=Dark] .btn.btn-pink, body main.Dark .btn.btn-pink:hover, body main.Dark .btn.btn-pink {
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] section.content, body main.Dark section.content {
+  background: var(--bs-dark);
+}
+body main[data-theme=Dark] section.content .socials .social-us:hover a, body main.Dark section.content .socials .social-us:hover a {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Dark] section.content .socials .shape:hover, body main[data-theme=Dark] section.content .profile-content .social .shape:hover, body main.Dark section.content .socials .shape:hover, body main.Dark section.content .profile-content .social .shape:hover {
+  background-color: var(--bs-primary);
+  color: #272b30;
+}
+body main[data-theme=Dark] section.content .profile-content .social i, body main.Dark section.content .profile-content .social i {
+  color: #6c757d;
+}
+body main[data-theme=Dark] section.content .profile-content .social a:hover .shape, body main[data-theme=Dark] section.content .profile-content .social a:hover i, body main.Dark section.content .profile-content .social a:hover .shape, body main.Dark section.content .profile-content .social a:hover i {
+  color: #272b30;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Dark] section.content .profile-content .social .shape, body main[data-theme=Dark] section.content .socials .shape, body main.Dark section.content .profile-content .social .shape, body main.Dark section.content .socials .shape {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] section.content .profile-content p.text-secondary,
+body main[data-theme=Dark] section.content p.text-secondary, body main.Dark section.content .profile-content p.text-secondary,
+body main.Dark section.content p.text-secondary {
+  color: #6c757d !important;
+}
+body main[data-theme=Dark] section.content input#search-c,
+body main[data-theme=Dark] section.content input#search-m, body main.Dark section.content input#search-c,
+body main.Dark section.content input#search-m {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] section.content input#search-c::placeholder,
+body main[data-theme=Dark] section.content input#search-m::placeholder, body main.Dark section.content input#search-c::placeholder,
+body main.Dark section.content input#search-m::placeholder {
+  color: #505050;
+  font-size: small;
+}
+body main[data-theme=Dark] section.content .filter a:hover, body main[data-theme=Dark] section.content .filter-active, body main.Dark section.content .filter a:hover, body main.Dark section.content .filter-active {
+  background-color: var(--bs-primary);
+  color: #272b30 !important;
+  font-weight: 500;
+}
+body main[data-theme=Dark] section.content .filter a:hover, body main[data-theme=Dark] section.content .filter-active, body main.Dark section.content .filter a:hover, body main.Dark section.content .filter-active {
+  border-color: var(--bs-primary);
+}
+body main[data-theme=Dark] section.content .progress, body main.Dark section.content .progress {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] section.content .progress-bar, body main.Dark section.content .progress-bar {
+  color: #272b30;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Dark] section.content .p-progress div > div, body main.Dark section.content .p-progress div > div {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Dark] section.content .btn.btn-pink-outline:hover, body main.Dark section.content .btn.btn-pink-outline:hover {
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] section.content .btn.btn-pink-outline, body main.Dark section.content .btn.btn-pink-outline {
+  color: #6c757d;
+  background-color: #272b30;
+  border: none;
+}
+body main[data-theme=Dark] section.content .btn.btn-pink-outline:hover, body main.Dark section.content .btn.btn-pink-outline:hover {
+  color: var(--bs-primary);
+  background-color: #1c1f23;
+  box-shadow: none;
+}
+body main[data-theme=Dark] .bg-dark, body main[data-theme=Dark] .blog-quote, body main[data-theme=Dark] .comment-item, body main.Dark .bg-dark, body main.Dark .blog-quote, body main.Dark .comment-item {
+  background-color: #272b30 !important;
+}
+body main[data-theme=Dark] .text-secondary, body main.Dark .text-secondary {
+  color: #bbbbbb !important;
+}
+body main[data-theme=Dark] .card, body main.Dark .card {
+  background-color: var(--bs-dark);
+}
+body main[data-theme=Dark] .card:hover .card-text, body main.Dark .card:hover .card-text {
+  color: #c5c5c5;
+}
+body main[data-theme=Dark] .card .card-header, body main.Dark .card .card-header {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .card .card-text, body main.Dark .card .card-text {
+  color: #bbbbbb;
+}
+body main[data-theme=Dark] .page-link, body main.Dark .page-link {
+  color: var(--bs-primary);
+  background-color: var(--bs-dark);
+}
+body main[data-theme=Dark] .page-link:hover, body main[data-theme=Dark] .page-link:focus, body main.Dark .page-link:hover, body main.Dark .page-link:focus {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .btn-dark, body main.Dark .btn-dark {
+  color: #6c757d;
+  background-color: #272b30;
+  border: none;
+}
+body main[data-theme=Dark] .btn-dark:hover, body main.Dark .btn-dark:hover {
+  color: var(--bs-primary);
+  background-color: #1c1f23;
+}
+body main[data-theme=Dark] .btn-check:focus + body main[data-theme=Dark] .btn-dark, body main[data-theme=Dark] .btn-dark:focus, body main[data-theme=Dark] .btn-check:focus + body main.Dark .btn-dark, body main.Dark .btn-dark:focus, body main.Dark .btn-check:focus + body main[data-theme=Dark] .btn-dark, body main.Dark .btn-check:focus + body main.Dark .btn-dark {
+  color: #c5c5c5;
+  background-color: #1c1f23;
+  box-shadow: none;
+}
+body main[data-theme=Dark] .btn-check:checked + body main[data-theme=Dark].btn-dark, body main[data-theme=Dark] .btn-check:active + body main[data-theme=Dark].btn-dark, body main[data-theme=Dark] .btn-dark:active, body main[data-theme=Dark] .btn-dark.active, body main[data-theme=Dark] .show > body main[data-theme=Dark] .btn-dark.dropdown-toggle, body main[data-theme=Dark] .btn-check:checked + body main.Dark.btn-dark, body main[data-theme=Dark] .btn-check:active + body main.Dark.btn-dark, body main.Dark .btn-dark:active, body main.Dark .btn-dark.active, body main[data-theme=Dark] .show > body main.Dark .btn-dark.dropdown-toggle, body main.Dark .btn-check:checked + body main[data-theme=Dark].btn-dark, body main.Dark .btn-check:active + body main[data-theme=Dark].btn-dark, body main.Dark .show > body main[data-theme=Dark] .btn-dark.dropdown-toggle, body main.Dark .btn-check:checked + body main.Dark.btn-dark, body main.Dark .btn-check:active + body main.Dark.btn-dark, body main.Dark .show > body main.Dark .btn-dark.dropdown-toggle {
+  color: #c5c5c5;
+  background-color: #1a1e21;
+  border-color: #191c1f;
+}
+body main[data-theme=Dark] .btn-check:checked + body main[data-theme=Dark] .btn-dark:focus, body main[data-theme=Dark] .btn-check:active + .btn-dark:focus, body main[data-theme=Dark] .btn-dark:active:focus, body main[data-theme=Dark] .btn-dark.active:focus, body main[data-theme=Dark] .show > body main[data-theme=Dark] .btn-dark.dropdown-toggle:focus, body main[data-theme=Dark] .btn-check:checked + body main.Dark .btn-dark:focus, body main.Dark .btn-check:active + .btn-dark:focus, body main.Dark .btn-dark:active:focus, body main.Dark .btn-dark.active:focus, body main[data-theme=Dark] .show > body main.Dark .btn-dark.dropdown-toggle:focus, body main.Dark .btn-check:checked + body main[data-theme=Dark] .btn-dark:focus, body main.Dark .show > body main[data-theme=Dark] .btn-dark.dropdown-toggle:focus, body main.Dark .btn-check:checked + body main.Dark .btn-dark:focus, body main.Dark .show > body main.Dark .btn-dark.dropdown-toggle:focus {
+  box-shadow: none;
+}
+body main[data-theme=Dark] .btn-dark:disabled, body main[data-theme=Dark] .btn-dark.disabled, body main.Dark .btn-dark:disabled, body main.Dark .btn-dark.disabled {
+  color: #c5c5c5;
+  background-color: var(--bs-blue-dark);
+  border-color: var(--bs-blue-dark);
+}
+body main[data-theme=Dark] .dropdown-menu-dark, body main.Dark .dropdown-menu-dark {
+  color: #dee2e6;
+  background-color: var(--bs-dark);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item, body main.Dark .dropdown-menu-dark .dropdown-item {
+  color: #dee2e6;
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item:hover, body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item:focus, body main.Dark .dropdown-menu-dark .dropdown-item:hover, body main.Dark .dropdown-menu-dark .dropdown-item:focus {
+  color: #c5c5c5;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item.active, body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item:active, body main.Dark .dropdown-menu-dark .dropdown-item.active, body main.Dark .dropdown-menu-dark .dropdown-item:active {
+  color: #c5c5c5;
+  text-decoration: none;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item.disabled, body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item:disabled, body main.Dark .dropdown-menu-dark .dropdown-item.disabled, body main.Dark .dropdown-menu-dark .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item .dropdown-divider, body main.Dark .dropdown-menu-dark .dropdown-item .dropdown-divider {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item .dropdown-item-text, body main.Dark .dropdown-menu-dark .dropdown-item .dropdown-item-text {
+  color: #dee2e6;
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item .dropdown-header, body main.Dark .dropdown-menu-dark .dropdown-item .dropdown-header {
+  color: #adb5bd;
+}
+body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item .dropdown-item:hover, body main[data-theme=Dark] .dropdown-menu-dark .dropdown-item .dropdown-item:focus, body main.Dark .dropdown-menu-dark .dropdown-item .dropdown-item:hover, body main.Dark .dropdown-menu-dark .dropdown-item .dropdown-item:focus {
+  color: #c5c5c5;
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .text-dark, body main.Dark .text-dark {
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] .form-control, body main.Dark .form-control {
+  color: var(--bs-primary);
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .form-control:focus, body main.Dark .form-control:focus {
+  color: var(--bs-primary);
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .message label, body main.Dark .message label {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Dark] .btn-primary, body main.Dark .btn-primary {
+  color: #272b30;
+  font-weight: 500;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Dark] .btn-primary:hover, body main.Dark .btn-primary:hover {
+  color: var(--bs-dark);
+  font-weight: 500;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Dark] .btn-check:focus + body main[data-theme=Dark] .btn-primary, body main[data-theme=Dark] .btn-primary:focus, body main[data-theme=Dark] .btn-check:focus + body main.Dark .btn-primary, body main.Dark .btn-primary:focus, body main.Dark .btn-check:focus + body main[data-theme=Dark] .btn-primary, body main.Dark .btn-check:focus + body main.Dark .btn-primary {
+  color: var(--bs-dark);
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Dark] .text-dark, body main.Dark .text-dark {
+  color: var(--bs-blue-dark) !important;
+}
+body main[data-theme=Dark] .item .box h6, body main[data-theme=Dark] .item > h6, body main[data-theme=Dark] .skill > h6, body main.Dark .item .box h6, body main.Dark .item > h6, body main.Dark .skill > h6 {
+  color: #c5c5c5 !important;
+}
+body main[data-theme=Dark] .page-item.active .page-link, body main.Dark .page-item.active .page-link {
+  color: #272b30;
+}
+body main[data-theme=Dark] .page-item.active .page-link:hover, body main.Dark .page-item.active .page-link:hover {
+  color: var(--bs-primary);
+}
+body main[data-theme=Dark] .accordion-button:not(.collapsed), body main.Dark .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] .accordion-button, body main.Dark .accordion-button {
+  color: #bbbbbb;
+}
+body main[data-theme=Dark] .blog-categories ul.category li a:hover, body main[data-theme=Dark] .blog-categories ul.category li:hover, body main.Dark .blog-categories ul.category li a:hover, body main.Dark .blog-categories ul.category li:hover {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Dark] .blog-categories ul.category li a, body main[data-theme=Dark] .blog-tags ul.tags li a, body main.Dark .blog-categories ul.category li a, body main.Dark .blog-tags ul.tags li a {
+  color: #bbbbbb !important;
+}
+body main[data-theme=Dark] .btn-nav-comment button.btn.btn-comment.vote-up:hover, body main.Dark .btn-nav-comment button.btn.btn-comment.vote-up:hover {
+  color: var(--bs-success) !important;
+}
+body main[data-theme=Dark] .btn-nav-comment button.btn.btn-comment.vote-down:hover, body main.Dark .btn-nav-comment button.btn.btn-comment.vote-down:hover {
+  color: var(--bs-danger) !important;
+}
+body main[data-theme=Dark] .blog-box, body main[data-theme=Dark] .blog-recent, body main[data-theme=Dark] .blog-tags, body main[data-theme=Dark] .blog-categories, body main[data-theme=Dark] .blog-archive, body main[data-theme=Dark] .comment-box, body main[data-theme=Dark] .comment-form, body main.Dark .blog-box, body main.Dark .blog-recent, body main.Dark .blog-tags, body main.Dark .blog-categories, body main.Dark .blog-archive, body main.Dark .comment-box, body main.Dark .comment-form {
+  border-radius: 1rem;
+  background-color: var(--bs-dark);
+}
+body main[data-theme=Dark] .TableOfContent .accordion .accordion-body, body main.Dark .TableOfContent .accordion .accordion-body {
+  background-color: #272b30;
+}
+body main[data-theme=Dark] .TableOfContent .accordion .accordion-body ul.list-group li, body main.Dark .TableOfContent .accordion .accordion-body ul.list-group li {
+  background-color: transparent;
+  border: none;
+  color: #bbbbbb;
+}
+body main[data-theme=Dark] .TableOfContent .accordion .accordion-body ul.list-group li:focus, body main.Dark .TableOfContent .accordion .accordion-body ul.list-group li:focus {
+  color: var(--bs-primary);
+}
+body main[data-theme=Dark] .blog-recent ul.list-group li.list-group-item:hover, body main[data-theme=Dark] .blog-archive ul.list-group li.list-group-item:hover, body main.Dark .blog-recent ul.list-group li.list-group-item:hover, body main.Dark .blog-archive ul.list-group li.list-group-item:hover {
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Dark] .blog-recent ul.list-group li.list-group-item:hover a, body main[data-theme=Dark] .blog-archive ul.list-group li.list-group-item:hover a, body main.Dark .blog-recent ul.list-group li.list-group-item:hover a, body main.Dark .blog-archive ul.list-group li.list-group-item:hover a {
+  color: var(--bs-dark);
+}
+body main[data-theme=Dark] .blog-recent ul.list-group li.list-group-item a, body main[data-theme=Dark] .blog-archive ul.list-group li.list-group-item a, body main.Dark .blog-recent ul.list-group li.list-group-item a, body main.Dark .blog-archive ul.list-group li.list-group-item a {
+  color: #bbbbbb;
+}
+body main[data-theme=Dark] .nav li.active a.link i, body main[data-theme=Dark] .nav a.link:hover i, body main.Dark .nav li.active a.link i, body main.Dark .nav a.link:hover i {
+  color: #272b30 !important;
+}
+
+/* Light Mode */
+body main[data-theme=Light], body main, body main.Light {
+  color: var(--bs-blue-dark);
+}
+body main[data-theme=Light] .accordion-button:not(.collapsed), body main .accordion-button:not(.collapsed), body main.Light .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] > nav, body main > nav, body main.Light > nav {
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+body main[data-theme=Light] > nav ul li:hover i, body main[data-theme=Light] > nav ul li.active i, body main[data-theme=Light] > nav ul li.active a i, body main[data-theme=Light] > nav ul li:hover a i, body main > nav ul li:hover i, body main > nav ul li.active i, body main > nav ul li.active a i, body main > nav ul li:hover a i, body main.Light > nav ul li:hover i, body main.Light > nav ul li.active i, body main.Light > nav ul li.active a i, body main.Light > nav ul li:hover a i {
+  color: white;
+}
+body main[data-theme=Light] > nav ul li, body main > nav ul li, body main.Light > nav ul li {
+  border: none;
+  background-color: #f5f5f5;
+}
+body main[data-theme=Light] > nav ul li.active, body main > nav ul li.active, body main.Light > nav ul li.active {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+}
+body main[data-theme=Light] > nav ul li:hover, body main > nav ul li:hover, body main.Light > nav ul li:hover {
+  background-color: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  transition: ease-in-out;
+}
+body main[data-theme=Light] > nav ul li a i, body main > nav ul li a i, body main.Light > nav ul li a i {
+  color: var(--bs-primary);
+}
+body main[data-theme=Light] section.content, body main section.content, body main.Light section.content {
+  background: white;
+}
+body main[data-theme=Light] section.content .socials .social-us:hover a, body main section.content .socials .social-us:hover a, body main.Light section.content .socials .social-us:hover a {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Light] section.content .socials .shape:hover, body main section.content .socials .shape:hover, body main.Light section.content .socials .shape:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body main[data-theme=Light] section.content .profile-content .social i, body main section.content .profile-content .social i, body main.Light section.content .profile-content .social i {
+  color: #b9b9b9;
+}
+body main[data-theme=Light] section.content .profile-content .social a:hover .shape, body main[data-theme=Light] section.content .profile-content .social a:hover i, body main section.content .profile-content .social a:hover .shape, body main section.content .profile-content .social a:hover i, body main.Light section.content .profile-content .social a:hover .shape, body main.Light section.content .profile-content .social a:hover i {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] section.content .profile-content .social .shape, body main[data-theme=Light] section.content .socials .shape, body main section.content .profile-content .social .shape, body main section.content .socials .shape, body main.Light section.content .profile-content .social .shape, body main.Light section.content .socials .shape {
+  background-color: #f5f5f5;
+}
+body main[data-theme=Light] section.content .profile-content > p.text-secondary, body main section.content .profile-content > p.text-secondary, body main.Light section.content .profile-content > p.text-secondary {
+  color: #b9b9b9 !important;
+}
+body main[data-theme=Light] section.content .filter a:hover, body main[data-theme=Light] section.content .filter-active, body main section.content .filter a:hover, body main section.content .filter-active, body main.Light section.content .filter a:hover, body main.Light section.content .filter-active {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+}
+body main[data-theme=Light] section.content .btn.btn-pink-outline, body main section.content .btn.btn-pink-outline, body main.Light section.content .btn.btn-pink-outline {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+body main[data-theme=Light] section.content .btn.btn-pink-outline:hover, body main section.content .btn.btn-pink-outline:hover, body main.Light section.content .btn.btn-pink-outline:hover {
+  color: #fff;
+}
+body main[data-theme=Light] section.content input#search-c,
+body main[data-theme=Light] section.content input#search-m, body main section.content input#search-c,
+body main section.content input#search-m, body main.Light section.content input#search-c,
+body main.Light section.content input#search-m {
+  background-color: #f9fafb;
+}
+body main[data-theme=Light] section.content .progress-bars, body main section.content .progress-bars, body main.Light section.content .progress-bars {
+  background: var(--bs-primary);
+}
+body main[data-theme=Light] section.content .progress-bars::after, body main section.content .progress-bars::after, body main.Light section.content .progress-bars::after {
+  background: rgb(236, 236, 236);
+}
+body main[data-theme=Light] section.content .progress, body main section.content .progress, body main.Light section.content .progress {
+  background-color: #f9f9f9;
+}
+body main[data-theme=Light] section.content .progress-bar, body main section.content .progress-bar, body main.Light section.content .progress-bar {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] .accordion-button:not(.collapsed), body main .accordion-button:not(.collapsed), body main.Light .accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body main[data-theme=Light] .blog-categories ul.category li a:hover, body main[data-theme=Light] .blog-categories ul.category li:hover, body main .blog-categories ul.category li a:hover, body main .blog-categories ul.category li:hover, body main.Light .blog-categories ul.category li a:hover, body main.Light .blog-categories ul.category li:hover {
+  color: var(--bs-primary) !important;
+}
+body main[data-theme=Light] .accordion-button, body main .accordion-button, body main.Light .accordion-button {
+  color: #5b5b5b;
+}
+body main[data-theme=Light] .btn-nav-comment button.btn.btn-comment.vote-up:hover, body main .btn-nav-comment button.btn.btn-comment.vote-up:hover, body main.Light .btn-nav-comment button.btn.btn-comment.vote-up:hover {
+  color: var(--bs-success) !important;
+}
+body main[data-theme=Light] .btn-nav-comment button.btn.btn-comment.vote-down:hover, body main .btn-nav-comment button.btn.btn-comment.vote-down:hover, body main.Light .btn-nav-comment button.btn.btn-comment.vote-down:hover {
+  color: var(--bs-danger) !important;
+}
+body main[data-theme=Light] .blog-box, body main[data-theme=Light] .blog-recent, body main[data-theme=Light] .blog-tags, body main[data-theme=Light] .blog-categories, body main[data-theme=Light] .blog-archive, body main[data-theme=Light] .comment-box, body main[data-theme=Light] .comment-form, body main .blog-box, body main .blog-recent, body main .blog-tags, body main .blog-categories, body main .blog-archive, body main .comment-box, body main .comment-form, body main.Light .blog-box, body main.Light .blog-recent, body main.Light .blog-tags, body main.Light .blog-categories, body main.Light .blog-archive, body main.Light .comment-box, body main.Light .comment-form {
+  border-radius: 1rem;
+  background-color: #f9fafb;
+}
+body main[data-theme=Light] .blog-quote, body main .blog-quote, body main.Light .blog-quote {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+body main[data-theme=Light] .blog-recent ul.list-group li.list-group-item:hover, body main[data-theme=Light] .blog-archive ul.list-group li.list-group-item:hover, body main .blog-recent ul.list-group li.list-group-item:hover, body main .blog-archive ul.list-group li.list-group-item:hover, body main.Light .blog-recent ul.list-group li.list-group-item:hover, body main.Light .blog-archive ul.list-group li.list-group-item:hover {
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] .blog-recent ul.list-group li.list-group-item:hover a, body main[data-theme=Light] .blog-archive ul.list-group li.list-group-item:hover a, body main .blog-recent ul.list-group li.list-group-item:hover a, body main .blog-archive ul.list-group li.list-group-item:hover a, body main.Light .blog-recent ul.list-group li.list-group-item:hover a, body main.Light .blog-archive ul.list-group li.list-group-item:hover a {
+  color: #fff;
+}
+body main[data-theme=Light] .blog-recent ul.list-group li.list-group-item a, body main[data-theme=Light] .blog-archive ul.list-group li.list-group-item a, body main .blog-recent ul.list-group li.list-group-item a, body main .blog-archive ul.list-group li.list-group-item a, body main.Light .blog-recent ul.list-group li.list-group-item a, body main.Light .blog-archive ul.list-group li.list-group-item a {
+  color: #5b5b5b;
+}
+body main[data-theme=Light] .TableOfContent .accordion .accordion-body, body main .TableOfContent .accordion .accordion-body, body main.Light .TableOfContent .accordion .accordion-body {
+  background-color: #f5f5f5;
+}
+body main[data-theme=Light] .TableOfContent .accordion .accordion-body ul.list-group li:hover, body main .TableOfContent .accordion .accordion-body ul.list-group li:hover, body main.Light .TableOfContent .accordion .accordion-body ul.list-group li:hover {
+  color: var(--bs-primary);
+}
+body main[data-theme=Light] .TableOfContent .accordion .accordion-body ul.list-group li, body main .TableOfContent .accordion .accordion-body ul.list-group li, body main.Light .TableOfContent .accordion .accordion-body ul.list-group li {
+  background-color: transparent;
+  border: none;
+  color: #5b5b5b;
+}
+body main[data-theme=Light] .btn.btn-pink:hover, body main[data-theme=Light] .btn.btn-pink, body main .btn.btn-pink:hover, body main .btn.btn-pink, body main.Light .btn.btn-pink:hover, body main.Light .btn.btn-pink {
+  color: #fff;
+}
+body main[data-theme=Light] .btn.btn-pink-outline:hover, body main .btn.btn-pink-outline:hover, body main.Light .btn.btn-pink-outline:hover {
+  color: #fff;
+}
+body main[data-theme=Light] .card, body main .card, body main.Light .card {
+  background-color: #fff;
+}
+body main[data-theme=Light] .card .card-header, body main .card .card-header, body main.Light .card .card-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body main[data-theme=Light] .card:hover .card-text, body main .card:hover .card-text, body main.Light .card:hover .card-text {
+  color: var(--bs-blue-dark);
+}
+body main[data-theme=Light] .text-secondary, body main[data-theme=Light] .card-text, body main .text-secondary, body main .card-text, body main.Light .text-secondary, body main.Light .card-text {
+  color: #5b5b5b;
+}
+body main[data-theme=Light] .page-link, body main .page-link, body main.Light .page-link {
+  color: var(--bs-primary);
+  background-color: #fff;
+}
+body main[data-theme=Light] .page-link:hover, body main[data-theme=Light] .page-link:focus, body main .page-link:hover, body main .page-link:focus, body main.Light .page-link:hover, body main.Light .page-link:focus {
+  background-color: #e9ecef;
+  color: var(--bs-primary-hov);
+}
+body main[data-theme=Light] .dropdown-menu, body main .dropdown-menu, body main.Light .dropdown-menu {
+  color: var(--bs-blue-dark);
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+body main[data-theme=Light] .dropdown-menu .dropdown-item:hover, body main[data-theme=Light] .dropdown-menu .dropdown-item:focus, body main .dropdown-menu .dropdown-item:hover, body main .dropdown-menu .dropdown-item:focus, body main.Light .dropdown-menu .dropdown-item:hover, body main.Light .dropdown-menu .dropdown-item:focus {
+  color: #1e2125;
+  background-color: #f9fafb;
+}
+body main[data-theme=Light] .dropdown-menu .dropdown-item.active, body main[data-theme=Light] .dropdown-menu .dropdown-item:active, body main .dropdown-menu .dropdown-item.active, body main .dropdown-menu .dropdown-item:active, body main.Light .dropdown-menu .dropdown-item.active, body main.Light .dropdown-menu .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] .dropdown-menu .dropdown-item.disabled, body main[data-theme=Light] .dropdown-menu .dropdown-item:disabled, body main .dropdown-menu .dropdown-item.disabled, body main .dropdown-menu .dropdown-item:disabled, body main.Light .dropdown-menu .dropdown-item.disabled, body main.Light .dropdown-menu .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+body main[data-theme=Light] .form-control, body main .form-control, body main.Light .form-control {
+  color: var(--bs-primary);
+  background-color: #f5f5f5;
+}
+body main[data-theme=Light] .form-control:focus, body main .form-control:focus, body main.Light .form-control:focus {
+  color: var(--bs-primary);
+  background-color: #f5f5f5;
+}
+body main[data-theme=Light] .btn-primary, body main .btn-primary, body main.Light .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] .btn-primary:hover, body main .btn-primary:hover, body main.Light .btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Light] .btn-check:focus + body main[data-theme=Light] .btn-primary, body main[data-theme=Light] .btn-primary:focus, body main[data-theme=Light] .btn-check:focus + body main .btn-primary, body main .btn-primary:focus, body main[data-theme=Light] .btn-check:focus + body main.Light .btn-primary, body main.Light .btn-primary:focus, body main .btn-check:focus + body main[data-theme=Light] .btn-primary, body main .btn-check:focus + body main .btn-primary, body main .btn-check:focus + body main.Light .btn-primary, body main.Light .btn-check:focus + body main[data-theme=Light] .btn-primary, body main.Light .btn-check:focus + body main .btn-primary, body main.Light .btn-check:focus + body main.Light .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Light] .text-white, body main .text-white, body main.Light .text-white {
+  color: #fff !important;
+}
+body main[data-theme=Light] .bg-light, body main .bg-light, body main.Light .bg-light {
+  background-color: #f8f9fa !important;
+}
+body main[data-theme=Light] .btn-primary, body main .btn-primary, body main.Light .btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+body main[data-theme=Light] .btn-primary:hover, body main .btn-primary:hover, body main.Light .btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Light] .btn-check:focus + .btn-primary,
+body main[data-theme=Light] .btn-primary:focus, body main .btn-check:focus + .btn-primary,
+body main .btn-primary:focus, body main.Light .btn-check:focus + .btn-primary,
+body main.Light .btn-primary:focus {
+  color: #fff;
+  background-color: var(--bs-primary-hov);
+}
+body main[data-theme=Light] .nav li.active a.link i, body main[data-theme=Light] .nav a.link:hover i, body main .nav li.active a.link i, body main .nav a.link:hover i, body main.Light .nav li.active a.link i, body main.Light .nav a.link:hover i {
+  color: white !important;
+}
+
+/* ============== End of Theme =============== */
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > nav.nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 70px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  height: 70%;
+  left: 10%;
+  z-index: 1;
+}
+main > nav.nav ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 1rem 0;
+}
+main > nav.nav ul li {
+  width: 34pt;
+  height: 34pt;
+  border-radius: 10px;
+  display: inline-grid;
+}
+main section.content {
+  padding: 10px 10px 10px 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 80vh;
+  width: 75%;
+  border-radius: 1rem;
+  z-index: 0;
+  display: flex;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+main section.content .wrap {
+  padding: 10px 2%;
+}
+main section.content .filter {
+  border-radius: 3rem;
+}
+main section.content .avatar img {
+  border-radius: 50%;
+  border: 6px var(--bs-primary) solid;
+  max-width: 280px;
+  max-height: 280px;
+  padding: 10px;
+}
+main section.content .profile-content p {
+  width: 90%;
+}
+main section.content .profile span, main section.content .profile h1 {
+  margin: 0;
+  padding: 0;
+}
+main section.content .profile-content .social {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main section.content .profile-content .social .shape {
+  margin-right: 10px;
+  width: 26pt;
+  height: 26pt;
+  border-radius: 50%;
+}
+main section.content input#search-c,
+main section.content input#search-m {
+  border-radius: 2rem;
+  margin-right: 20px;
+}
+main section.content .image-box {
+  width: fit-content;
+  height: 200px;
+  border-radius: 1rem;
+}
+main section.content .line {
+  border-bottom: 2px solid var(--bs-primary);
+}
+main .buttons i {
+  font-weight: bold;
+}
+main .item {
+  margin: 0 1rem;
+}
+main .item:first-child {
+  margin-left: 20px;
+}
+main .item .box {
+  width: 30%;
+}
+main .container > div.text-center h2 {
+  font-weight: bold;
+}
+main .vertical-line {
+  border-left: 2px solid var(--bs-primary);
+}
+main .vertical-line .item-box > .rounded-circle {
+  top: 15px;
+  left: -8px;
+}
+main .resume {
+  border-radius: 20px;
+  display: flex;
+}
+main .resume img {
+  border: 4px solid var(--bs-primary);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+main .about {
+  height: 70%;
+  padding: 0 !important;
+  margin: 0;
+}
+main .items {
+  margin: 5% 0 0 0;
+  padding: 0;
+}
+main .items .col .item h6 {
+  font-size: 0.85rem !important;
+}
+main .resume-lg {
+  display: flex;
+  width: 100%;
+}
+main .resume-lg img {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main img.avatar-client {
+  border-radius: 50%;
+  border: 2px solid var(--bs-primary);
+  padding: 3px;
+}
+main .avatar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 20px;
+}
+main .client-item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+main .client-item:hover {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+main .hero-image {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+main .btn-nav {
+  padding: 2.5rem 0;
+}
+main .comment-avatar {
+  display: flex;
+  align-items: center;
+}
+main .comment-avatar img {
+  border: 2px solid var(--bs-primary);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+main .comment-item {
+  padding: 1.25rem 2rem;
+  margin: 10px 0;
+}
+main .comment-item-sub {
+  margin-top: 0.75rem;
+}
+main .comment-content {
+  display: flex;
+  align-items: center;
+}
+main .btn-nav-comment {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+main .form-comment {
+  display: flex;
+  justify-content: center;
+}
+main .blog-quote,
+main .comment-item {
+  border-radius: 10px;
+}
+main .nav .link i {
+  color: var(--bs-primary);
+  font-size: 26px;
+  display: inline-block;
+  margin-top: 20%;
+}
+main .blog-content p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+span {
+  color: var(--bs-primary);
+}
+
+p {
+  font-weight: 500;
+}
+
+.btn.btn-pink:hover {
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  transition: ease-in-out;
+}
+
+.btn.btn-pink {
+  font-weight: 500;
+  border-radius: 50rem;
+  background-color: var(--bs-primary);
+}
+
+.btn.btn-pink-outline:hover {
+  background: var(--bs-primary);
+  box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  transition: ease-in-out;
+}
+
+.btn.btn-pink-outline {
+  font-weight: 500;
+  border-radius: 50rem;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.btn-light {
+  color: var(--bs-dark);
+  background-color: #f8f9fa;
+  border: none;
+}
+.btn-light:hover {
+  color: var(--bs-primary);
+  background-color: #f8f9fa;
+}
+
+.filter a {
+  width: fit-content;
+}
+
+.filter {
+  margin-left: 5px;
+}
+
+.filter a.text-secondary,
+.filter-active {
+  font-size: small;
+  border-radius: 3rem;
+}
+
+.filter a.text-secondary:hover,
+.filter-active:hover,
+.filter a.text-secondary,
+.filter-active {
+  padding: 0.25rem 1.25rem;
+}
+
+.profile-content .buttons a {
+  font-size: 14px;
+}
+
+.socials {
+  width: 100%;
+  margin-top: 20px;
+}
+.socials .social-us .shape {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 26pt;
+  height: 26pt;
+  border-radius: 50%;
+}
+
+textarea.form-control-sm {
+  height: 8rem;
+}
+
+section::-webkit-scrollbar,
+.modal-fullscreen .modal-body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  /* or add it to the track */
+}
+
+section::-webkit-scrollbar-thumb,
+.modal-fullscreen .modal-body::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 30px;
+}
+
+#form-comment label {
+  font-weight: bold;
+}
+
+.blog-tags ul.tags li,
+.blog-categories ul.category li {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.blog-recent ul.list-group li.list-group-item,
+.blog-archive ul.list-group li.list-group-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.comment-box .comment .comment-item,
+.comment-box .comment .comment-item-sub {
+  display: block;
+}
+
+.blog-categories .category,
+.blog-categories .category {
+  font-weight: 500;
+}
+
+.blog-tags ul.tags li a {
+  font-size: small;
+}
+
+.btn.btn-comment {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.TableOfContent .accordion .accordion-header .accordion-button {
+  border-radius: 10px 10px 0 0;
+}
+.TableOfContent .accordion .accordion-body {
+  border-radius: 0 0 10px 10px;
+}
+
+.p-progress > div:hover:nth-child(1),
+.p-progress > div:hover:nth-child(2),
+.p-progress > div:hover:nth-child(3) {
+  color: var(--bs-primary);
+}
+
+/* =======================  */
+@media (min-width: 319.98px) and (max-width: 578.98px) {
+  main[Theme=Dark] {
+    background-color: var(--bs-dark);
+    background-image: none;
+  }
+  main[Theme=Glass] section.content {
+    height: 95vh;
+    width: 100%;
+  }
+  main[Theme=Light] {
+    background-color: #fff;
+    background-image: none;
+  }
+  main > nav.nav-mobile {
+    position: fixed;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    bottom: 0;
+  }
+  main > nav.nav-mobile ul.nav-list {
+    margin: 0;
+    padding: 0;
+  }
+  main > nav.nav-mobile ul.nav-list, main > nav.nav-mobile ul.nav-list li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  main > nav.nav-mobile ul.nav-list li {
+    margin: 0 0 0 10px !important;
+    padding: 10px;
+    width: 12%;
+    height: 12%;
+    border-radius: 10px;
+    display: inline-grid;
+  }
+  main > nav.nav-mobile ul.nav-list li.list {
+    margin: 0 0.8rem 0 0 !important;
+  }
+  main > nav.nav-mobile ul.nav-list li.active {
+    background-color: var(--bs-primary);
+    box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  }
+  main > nav.nav-mobile ul.nav-list li:hover {
+    background-color: var(--bs-primary);
+    box-shadow: 0px 0px 6px 2px var(--bs-primary);
+    transition: ease-in-out;
+  }
+  main > nav.nav-mobile ul.nav-list li a i {
+    font-size: 28px;
+  }
+  main > nav.nav {
+    display: none;
+  }
+  main section.content {
+    box-shadow: none;
+    padding: 10px;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+  main section.content .avatar .image img {
+    min-width: 200px;
+    border: 4px var(--bs-primary) solid;
+  }
+  main .filter a {
+    margin: 0 5px;
+  }
+}
+@media only screen and (orientation: landscape) and (max-width: 812px) and (max-height: 650px) {
+  main > nav.nav-mobile {
+    position: fixed;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    bottom: 0;
+  }
+  main > nav.nav-mobile ul.nav-list {
+    margin: 0;
+    padding: 0;
+  }
+  main > nav.nav-mobile ul.nav-list, main > nav.nav-mobile ul.nav-list li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  main > nav.nav-mobile ul.nav-list li {
+    margin: 0 0 0 10px !important;
+    padding: 10px;
+    width: 12%;
+    height: 12%;
+    border-radius: 10px;
+    display: inline-grid;
+  }
+  main > nav.nav-mobile ul.nav-list li.list {
+    margin: 0 0.8rem 0 0 !important;
+  }
+  main > nav.nav-mobile ul.nav-list li.active {
+    background-color: var(--bs-primary);
+    box-shadow: 0px 0px 6px 2px var(--bs-primary);
+  }
+  main > nav.nav-mobile ul.nav-list li:hover {
+    background-color: var(--bs-primary);
+    box-shadow: 0px 0px 6px 2px var(--bs-primary);
+    transition: ease-in-out;
+  }
+  main > nav.nav-mobile ul.nav-list li a i {
+    font-size: 28px;
+  }
+  main > nav.nav {
+    display: none;
+  }
+  main > nav.nav-mobile {
+    display: block !important;
+  }
+  main section.content {
+    box-shadow: none;
+    padding: 10px;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+  main section.content .avatar .image img {
+    min-width: 200px;
+    border: 4px var(--bs-primary) solid;
+  }
+  main .filter a {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 319.99px) {
+  .blog .hero-image {
+    height: 35vh;
+  }
+}
+@media (min-width: 319.98px) and (max-width: 419.98px) {
+  .blog .hero-image {
+    height: 35vh;
+  }
+}
+@media (min-width: 419.98px) and (max-width: 767.98px) {
+  .blog .hero-image {
+    height: 40vh;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .blog .hero-image {
+    height: 45vh;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .blog .hero-image {
+    height: 60vh;
+  }
+}
+@media (min-width: 463.98px) {
+  main > nav.nav-mobile ul li {
+    width: 9.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  section .avatar img {
+    width: 220px;
+    height: 220px;
+    border-width: 4px;
+  }
+  section .profile-content .buttons a {
+    font-size: smaller;
+  }
+  section .profile-content {
+    padding: 0 10px 10px 10px;
+  }
+}
+@media (min-width: 578.98px) {
+  main > nav.nav-mobile {
+    display: none;
+  }
+}
+@media (min-width: 578.98px) {
+  .comment-item-sub {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 474.98px) and (max-width: 529.98px) {
+  main > nav.nav {
+    left: 1.75rem;
+  }
+}
+@media (min-width: 529.99px) and (max-width: 584.98px) {
+  main > nav.nav {
+    left: 2rem;
+  }
+}
+@media (min-width: 584.99px) and (max-width: 599.98px) {
+  main > nav.nav {
+    left: 2.25rem;
+  }
+}
+@media (min-width: 599.99px) and (max-width: 654.98px) {
+  main > nav.nav {
+    left: 2.5rem;
+  }
+}
+@media (min-width: 654.99px) and (max-width: 709.98px) {
+  main > nav.nav {
+    left: 2.75rem;
+  }
+}
+@media (min-width: 709.99px) and (max-width: 764.98px) {
+  main > nav.nav {
+    left: 3.5rem;
+  }
+}
+@media (min-width: 764.99px) and (max-width: 847.98px) {
+  main > nav.nav {
+    left: 3.75rem;
+  }
+}
+@media (min-width: 847.99px) and (max-width: 929.98px) {
+  main > nav.nav {
+    left: 4.5rem;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 990px) {
+  section .profile-content p {
+    margin-left: 5%;
+  }
+
+  section .profile-content {
+    text-align: center;
+    margin: 5% 0;
+  }
+}
+@media (min-width: 119.99px) {
+  section.aboutme {
+    overflow-x: hidden;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

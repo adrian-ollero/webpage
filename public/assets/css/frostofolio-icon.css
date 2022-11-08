@@ -1,0 +1,144 @@
+@font-face {
+	font-family: "Frostofolio-Icon";
+	src: url("../fonts/Frostofolio-Icon.eot");
+	src: url("../fonts/Frostofolio-Icon.eot") format("embedded-opentype"), url("../fonts/Frostofolio-Icon.ttf") format("truetype"),
+		url("../fonts/Frostofolio-Icon.woff") format("woff"), url("../fonts/Frostofolio-Icon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.zen {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "Frostofolio-Icon" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.frs-moon_symbol:before {
+	content: "\e925";
+}
+.frs-sun:before {
+	content: "\e926";
+}
+.frs-business:before {
+	content: "\e900";
+}
+.frs-calendar_30:before {
+	content: "\e901";
+}
+.frs-calendar_30_solid:before {
+	content: "\e902";
+}
+.frs-consultation:before {
+	content: "\e903";
+}
+.frs-downloads_folder:before {
+	content: "\e904";
+}
+.frs-dribbble_circled:before {
+	content: "\e905";
+}
+.frs-edit_property:before {
+	content: "\e906";
+}
+.frs-edit_property_solid:before {
+	content: "\e907";
+}
+.frs-email:before {
+	content: "\e908";
+}
+.frs-envelope:before {
+	content: "\e909";
+}
+.frs-envelope_solid:before {
+	content: "\e90a";
+}
+.frs-facebook:before {
+	content: "\e90b";
+}
+.frs-facebook_f:before {
+	content: "\e90c";
+}
+.frs-facebook_f_solid:before {
+	content: "\e90d";
+}
+.frs-graduation_cap:before {
+	content: "\e90e";
+}
+.frs-home:before {
+	content: "\e90f";
+}
+.frs-home_solid:before {
+	content: "\e910";
+}
+.frs-instagram:before {
+	content: "\e911";
+}
+.frs-instagram_solid:before {
+	content: "\e912";
+}
+.frs-installing_updates:before {
+	content: "\e913";
+}
+.frs-linkedin_2:before {
+	content: "\e914";
+}
+.frs-marker:before {
+	content: "\e915";
+}
+.frs-paper_plane:before {
+	content: "\e916";
+}
+.frs-phone:before {
+	content: "\e917";
+}
+.frs-project:before {
+	content: "\e918";
+}
+.frs-project_solid:before {
+	content: "\e919";
+}
+.frs-resume_website:before {
+	content: "\e91a";
+}
+.frs-resume_website_solid:before {
+	content: "\e91b";
+}
+.frs-tag_window:before {
+	content: "\e91c";
+}
+.frs-tags_solid:before {
+	content: "\e91d";
+}
+.frs-twitter:before {
+	content: "\e91e";
+}
+.frs-twitter_circled:before {
+	content: "\e91f";
+}
+.frs-twitter_solid:before {
+	content: "\e920";
+}
+.frs-user:before {
+	content: "\e921";
+}
+.frs-user_solid:before {
+	content: "\e922";
+}
+.frs-whatsapp:before {
+	content: "\e923";
+}
+.frs-whatsapp_solid:before {
+	content: "\e924";
+}
+.frs-price-tag:before {
+	content: "\e935";
+}
